@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,9 +8,8 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-
 :root {
     --bg-color: #081b29;
     --second-bg-color: #112e42;
@@ -76,6 +75,9 @@ section {
     display: flex;
     align-items: center;
     padding:12% 9%;
+    background: url('/home.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .home-content {
@@ -166,7 +168,7 @@ section {
 }
 
 .home-sci {
-    position: absolute;
+    position: fixed;
     bottom: 4rem;
     width: 170px;
     display: flex;
@@ -179,9 +181,49 @@ section {
     justify-content: center;
     align-items: center;
     top: 50px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background: transparent;
     border: .2rem solid var(--main-color);
     border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: var(--bg-color);
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.home-imgHover:hover {
+    background: var(--bg-color);
+    opacity: .8;
 }
