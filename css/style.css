@@ -86,7 +86,7 @@ section {
     display: flex;
     align-items: center;
     padding:20% 9%;
-    background: url('/images/home1.png') no-repeat;
+    background: url('/images/home.png') no-repeat;
     background-size: cover;
     background-position: left center;
 }
@@ -110,7 +110,7 @@ section {
 
 .home-content .text-animate {
     position: relative;
-    width: 32.8rem;
+    width: 35.5rem;
 }
 
 .home-content .text-animate h3 {
@@ -124,6 +124,7 @@ section {
     background-position: -33rem 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
+    white-space: nowrap;
 }
 
 .home-content .text-animate h3::before {
@@ -143,6 +144,10 @@ section {
     position: relative;
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
+}
+
+.ani-gif{
+    padding-left: 20px;
 }
 
 .btn-box {
@@ -207,7 +212,7 @@ section {
 
 .home-sci {
     position: absolute;
-    bottom: 1rem;
+    bottom: -4rem;
     width: 170px;
     display: flex;
     justify-content: space-between;
@@ -500,34 +505,56 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 85%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
     width: 80%;
 }
 
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
+    width: 75%;
+}
+
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 65%;
+    width: 85%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 43%;
+    width: 80%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+    width: 65%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+    width: 70%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 90%;
+    width: 60%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 67%;
+    width: 50%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 32%;
+    width: 55%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
+    width: 80%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
+    width: 90%;
+}
+
+.skills-column:nth-child(3) .skills-content .progress:nth-child(1) .bar span {
+    width: 90%;
+}
+
+.skills-column:nth-child(3) .skills-content .progress:nth-child(2) .bar span {
+    width: 40%;
+}
+
+.skills-column:nth-child(3) .skills-content .progress:nth-child(3) .bar span {
     width: 40%;
 }
 
@@ -605,6 +632,35 @@ span {
     cursor: pointer;
 }
 
+.success-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #28a745;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.success-dialog button {
+    background: white;
+    color: #28a745;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.success-dialog button:hover {
+    background: #f1f1f1;
+}
+
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -681,9 +737,18 @@ span {
     html {
         font-size: 60%;
     }
+
+    .home{
+    display: flex;
+    gap: 20px;
+    }
 }
 
 @media (max-width: 991px) {
+    .home{
+        display: flex;
+        gap: 20px;
+        }
     .header {
         padding: 2rem 4%;
     }
@@ -702,6 +767,11 @@ span {
 }
 
 @media (max-width: 768px) {
+    .home{
+        justify-content: center;
+        display: grid;
+        gap: 40px;
+        }
     .header {
         background: var(--bg-color);
     }
@@ -765,11 +835,16 @@ span {
         background: var(--bg-color);
         opacity: .6;
     }
+    
 }
 
 @media (max-width: 520px) {
     html {
         font-size: 50%;
+    }
+
+    .ani-gif{
+        display: none;
     }
 
     .home-content {
@@ -831,14 +906,15 @@ span {
     0%,
     10%,
     100% {
-        background-position: -33rem 0;
+        background-position: -36rem 0; 
     }
 
     65%,
     85% {
-        background-position: 0  0;
+        background-position: 0 0;
     }
 }
+
 
 @keyframes homeCursorText {
     0%,
@@ -850,7 +926,7 @@ span {
     65%,
     78%,
     85% {
-        width: 100;
+        width: 100%;
         opacity: 1;
     }
 
