@@ -558,15 +558,25 @@ span {
     width: 40%;
 }
 
+.certification{
+    min-height: auto;
+    padding-bottom: 7rem;
+
+
+}
+
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
+    background: var(--second-bg-color);
+
 }
 
 .contact form {
     max-width: 70rem;
     margin: 0 auto;
     text-align: center;
+
 }
 
 .contact form .input-box {
@@ -632,33 +642,6 @@ span {
     cursor: pointer;
 }
 
-.success-dialog {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #28a745;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.success-dialog button {
-    background: white;
-    color: #28a745;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.success-dialog button:hover {
-    background: #f1f1f1;
-}
 
 
 .footer {
@@ -731,6 +714,85 @@ span {
     animation: showRight 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
 }
+
+/* Container */
+.certification-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    background: var(--second-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Certification Card */
+  .certification-content {
+    background: linear-gradient(135deg, #007bff, #6c63ff);
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .certification-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Content */
+  .certification-content .content {
+    text-align: center;
+  }
+  
+  .certification-content h3 {
+    margin: 0;
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .certification-content p {
+    margin: 5px 0;
+    font-size: 1.6rem;
+    color: #e0e0e0;
+  }
+
+  /* Styles for the certification image */
+.certification-content .certificate-img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .certification-content a {
+    text-decoration: none;
+  }
+  
+  .certification-content .certificate-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .certification-box {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+  
 
 /* breakpoints */
 @media (max-width: 2400px) {
