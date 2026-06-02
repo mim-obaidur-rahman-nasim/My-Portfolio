@@ -1,19 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="description"
+      content="Portfolio of Mim Obaidur Rahman Nasim, Junior IT Support Engineer and Front-End Developer based in Vilnius, Lithuania."
+    />
+    <link rel="stylesheet" href="css/style.css?v=20260603-responsive" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>Nasim</title>
+    <title>Mim Obaidur Rahman Nasim | Portfolio</title>
   </head>
   <body>
-    <!--header design-->
     <header class="header">
-      <a href="#" class="logo"
+      <a href="#home" class="logo"
         >Nasim.<span class="animate" style="--i: 1"></span
       ></a>
 
@@ -24,7 +27,8 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#education">Education</a>
+        <a href="#education">Journey</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#certification">Certificates</a>
         <a href="#contact">Contact</a>
@@ -36,71 +40,80 @@
 
     <section class="home show-animate" id="home">
       <div class="home-content">
+        <p class="location-line">
+          <i class="bx bx-map"></i> Vilnius, Lithuania
+        </p>
         <h1>
           Hi, I'm <span>Mim Obaidur Rahman Nasim</span
           ><span class="animate" style="--i: 2"></span>
         </h1>
         <div class="text-animate">
-          <h3>Web & App Developer</h3>
+          <h3>Junior IT Support Engineer</h3>
           <span class="animate" style="--i: 3"></span>
         </div>
         <p>
-          As a dedicated Web and App Developer, I blend my passion for clean,
-          efficient code with a strong focus on user experience. I create web
-          and mobile applications that not only look exceptional but also
-          perform seamlessly, delivering intuitive and engaging digital
-          experiences that leave a lasting impression on every user.
+          Motivated IT Support and Front-End Development professional currently
+          pursuing an M.Sc. in Computer Engineering at Vilnius Gediminas
+          Technical University. I support Windows and macOS users, troubleshoot
+          hardware and software issues, configure devices, and build responsive
+          web interfaces with React.js, Tailwind CSS, and JavaScript.
           <span class="animate" style="--i: 4"></span>
         </p>
 
         <div class="btn-box">
-          <a href="mailto:obaidur150@gmail.com" class="btn" target="_blank"
-            >Hire Me</a
-          >
-          <a href="https://wa.me/01706342468" class="btn" target="_blank"
-            >Let's Talk</a
-          >
+          <a href="mailto:obaidurnasim@gmail.com" class="btn">Hire Me</a>
+          <a href="CV.pdf" class="btn" target="_blank">Download CV</a>
           <span class="animate" style="--i: 5"></span>
         </div>
       </div>
-      <div class="ani-gif"><img src="./images/Animation.gif" alt="" /></div>
-      <!-- i will fix it later  -->
-      <!-- <div class="home-sci">
-        <a href="#"><i class="bx bxl-facebook"></i></a>
-        <a href="#"><i class="bx bxl-linkedin"></i></a>
-        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-      </div> -->
+
+      <div class="ani-gif">
+        <img src="./images/Animation.gif" alt="Developer animation" />
+      </div>
+
+      <div class="home-sci">
+        <a
+          href="https://www.linkedin.com/in/mim-obaidur-rahman-nasim"
+          target="_blank"
+          aria-label="LinkedIn profile"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a
+          href="https://obaidur-rahman-nasim.netlify.app"
+          target="_blank"
+          aria-label="Portfolio website"
+          ><i class="bx bx-link-external"></i
+        ></a>
+        <a href="mailto:obaidurnasim@gmail.com" aria-label="Email Nasim"
+          ><i class="bx bx-envelope"></i
+        ></a>
+      </div>
 
       <div class="home-imgHover"></div>
     </section>
 
-    <!-- about section design -->
     <section class="about" id="about">
       <h2 class="heading">About <span>Me</span></h2>
 
       <div class="about-img">
-        <img src="/images/profile.png" alt="" />
+        <img src="./images/profile.png" alt="Mim Obaidur Rahman Nasim" />
         <span class="circle-spin"></span>
       </div>
 
       <div class="about-content">
-        <h3>Web & App Developer</h3>
+        <h3>Junior IT Support Engineer | Front-End Developer</h3>
         <p>
-          As a Web & App Developer, I create captivating digital experiences
-          using HTML, CSS, JavaScript, and Flutter. I specialize in seamless,
-          responsive interfaces for web and mobile applications, blending
-          technical expertise with a keen eye for design. Committed to
-          innovation, I deliver modern, user-centric solutions that inspire and
-          engage across platforms.
+          I am based in Lithuania with a valid student residence permit and a
+          background that combines practical IT support with software
+          development. I am experienced in Windows 10/11 troubleshooting, macOS
+          troubleshooting, Microsoft 365, software and driver installation,
+          hardware and peripheral support, device setup, and operating-system
+          issue resolution. On the development side, I work with React.js,
+          Flutter, HTML, CSS, JavaScript, Tailwind CSS, Git, and VS Code.
         </p>
-      </div>
-
-      <div class="btn-box btns">
-        <a href="#" class="btn">Read More</a>
       </div>
     </section>
 
-    <!-- education section -->
     <section class="education" id="education">
       <h2 class="heading">My <span>Journey</span></h2>
       <div class="education-row">
@@ -111,31 +124,22 @@
             <div class="education-content">
               <div class="content">
                 <div class="year">
-                  <i class="bx bxs-calendar"></i>2015 - 2016
+                  <i class="bx bxs-calendar"></i>September 2025 - September 2027
                 </div>
-                <h3>S.S.C - Harimohan Govt. High School</h3>
-                <p>Group - Science</p>
+                <h3>Vilnius Gediminas Technical University</h3>
+                <p>M.Sc. in Computer Engineering</p>
+                <p>Vilnius, Lithuania</p>
               </div>
             </div>
 
             <div class="education-content">
               <div class="content">
                 <div class="year">
-                  <i class="bx bxs-calendar"></i>2017 - 2018
+                  <i class="bx bxs-calendar"></i>January 2019 - January 2023
                 </div>
-                <h3>H.S.C - Shah Neamatullah College</h3>
-                <p>Group - Science</p>
-                <p></p>
-              </div>
-            </div>
-
-            <div class="education-content">
-              <div class="content">
-                <div class="year">
-                  <i class="bx bxs-calendar"></i>2019 - 2023
-                </div>
-                <h3>Bachelor Degree - Varendra University</h3>
-                <p>Depertment - Computer Science & Engineering(CSE)</p>
+                <h3>Varendra University</h3>
+                <p>B.Sc. in Computer Science and Engineering</p>
+                <p>Rajshahi, Bangladesh</p>
               </div>
             </div>
           </div>
@@ -148,13 +152,22 @@
             <div class="education-content">
               <div class="content">
                 <div class="year">
-                  <i class="bx bxs-calendar"></i>2020 - 2022
+                  <i class="bx bxs-calendar"></i>September 2024 - November 2024
                 </div>
-                <h3>Robotics Society of Varendra University</h3>
-                <p>Position - Financial Secretary</p>
+                <h3>Business Automation Limited (On-site)</h3>
                 <p>
-                  • Managed budgets and transactions with responsibility for
-                  supporting club activities.
+                  Mobile Application Development Intern (Flutter Development)
+                </p>
+                <p>
+                  Developed Flutter applications for business-focused solutions.
+                </p>
+                <p>
+                  Worked on UI implementation, debugging, testing, and feature
+                  integration.
+                </p>
+                <p>
+                  Collaborated with team members to improve usability and
+                  performance.
                 </p>
               </div>
             </div>
@@ -162,49 +175,53 @@
             <div class="education-content">
               <div class="content">
                 <div class="year">
-                  <i class="bx bxs-calendar"></i>2023 - Oct 2023
-                </div>
-                <h3>Developer Experience Hub</h3>
-                <p>Position - Jr. Front-End Developer</p>
-                <p>
-                  • Contributed to responsive UI development with HTML, CSS,
-                  JavaScript, and React for successful project delivery.
-                </p>
-                <p>
-                  • Demonstrated strong teamwork, communication, and
-                  client-handling skills in the development process.
-                </p>
-              </div>
-            </div>
-            <div class="education-content">
-              <div class="content">
-                <div class="year">
-                  <i class="bx bxs-calendar"></i>Dec 2023 - Apr 2024
+                  <i class="bx bxs-calendar"></i>December 2023 - April 2024
                 </div>
                 <h3>GAOTek Inc. (Remote)</h3>
-                <p>Human Resource</p>
+                <p>Human Resource Intern / Assistant Squad Leader</p>
                 <p>
-                  • Explored the human side of the business through an HR
-                  internship.
+                  Coordinated communication and workflow within an international
+                  remote team.
                 </p>
                 <p>
-                  • Promoted to Assistant Squad Leader (ASL) after internship
-                  completion, taking on additional team leadership
-                  responsibilities.
+                  Assisted with task management, reporting, and team
+                  coordination activities.
                 </p>
               </div>
             </div>
+
             <div class="education-content">
               <div class="content">
                 <div class="year">
-                  <i class="bx bxs-calendar"></i>Sep 2024 - Nov 2024
+                  <i class="bx bxs-calendar"></i>February 2023 - August 2023
                 </div>
-                <h3>Business Automation LTD</h3>
-                <p>Position - Flutter Developer (Intern)</p>
+                <h3>Developer Experience Hub (Remote)</h3>
+                <p>Junior Front-End Developer</p>
                 <p>
-                  • Developed mobile applications using Flutter, gaining
-                  practical experience in app design and implementation to meet
-                  business requirements.
+                  Developed responsive user interfaces using HTML, CSS,
+                  JavaScript, and React.js.
+                </p>
+                <p>
+                  Improved website responsiveness and cross-device
+                  compatibility.
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i>January 2020 - January 2023
+                </div>
+                <h3>Robotics Society of Varendra University (On-site)</h3>
+                <p>Technical Support Volunteer</p>
+                <p>
+                  Supported PCs, laptops, and robotics equipment through setup,
+                  troubleshooting, and maintenance.
+                </p>
+                <p>
+                  Assisted students with software installation, OS issues, and
+                  peripheral configuration.
                 </p>
               </div>
             </div>
@@ -213,180 +230,172 @@
       </div>
     </section>
 
-    <!--Skill section design-->
+    <section class="projects" id="projects">
+      <h2 class="heading">Featured <span>Projects</span></h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <i class="bx bx-drink"></i>
+          <h3>Cocktail Web Application</h3>
+          <p>
+            Responsive cocktail discovery platform built with Vue.js and
+            Tailwind CSS, including authentication, favourites, REST API usage,
+            and mobile-friendly UI components.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <i class="bx bx-user-pin"></i>
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            Responsive portfolio website built with React.js and Tailwind CSS to
+            showcase projects, technical skills, development experience, and
+            desktop/mobile optimisation.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <i class="bx bx-store"></i>
+          <h3>Marketplace Website Concept</h3>
+          <p>
+            Modern e-commerce marketplace UI concept focused on responsive
+            design, user experience, clean component structure, and scalable
+            front-end layout patterns.
+          </p>
+        </article>
+      </div>
+    </section>
 
     <section class="skills" id="skills">
-      <h2 class="heading">My <span>Skills</span></h2>
+      <h2 class="heading">Technical <span>Skills</span></h2>
 
-      <div class="skills-row">
+      <div class="skills-row skill-list-row">
         <div class="skills-column">
-          <h3 class="title">Coding Skills</h3>
-
+          <h3 class="title">IT Support & Systems</h3>
           <div class="skills-box">
-            <div class="skills-content">
-              <div class="progress">
-                <h3>C-Programming <span>80%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-              <div class="progress">
-                <h3>C++ <span>75%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-              <div class="progress">
-                <h3>HTML <span>85%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-
-              <div class="progress">
-                <h3>CSS <span>80%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-
-              <div class="progress">
-                <h3>JavaScript <span>65%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-
-              <div class="progress">
-                <h3>Dart <span>70%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skills-column">
-          <h3 class="title">Framework Skills</h3>
-
-          <div class="skills-box">
-            <div class="skills-content">
-              <div class="progress">
-                <h3>React.js<span>60%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-              <div class="progress">
-                <h3>Vue.js<span>50%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-              <div class="progress">
-                <h3>Flutter <span>55%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-              <div class="progress">
-                <h3>Bootstrap <span>80%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-              <div class="progress">
-                <h3>Tailwind CSS <span>90%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
+            <div class="skills-content skill-tags">
+              <span>Windows 10/11 Troubleshooting</span>
+              <span>macOS Troubleshooting</span>
+              <span>Microsoft Office / Microsoft 365</span>
+              <span>Driver Installation & Configuration</span>
+              <span>Software Installation & Maintenance</span>
+              <span>Hardware & Peripheral Troubleshooting</span>
+              <span>Laptop/Desktop Support</span>
+              <span>Device Setup & Maintenance</span>
+              <span>Basic Networking Concepts</span>
+              <span>Operating System Troubleshooting</span>
             </div>
           </div>
         </div>
 
         <div class="skills-column">
-          <h3 class="title">Professional Skills</h3>
-
+          <h3 class="title">Development</h3>
           <div class="skills-box">
-            <div class="skills-content">
-              <div class="progress">
-                <h3>Web Design & Development <span>90%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
+            <div class="skills-content skill-tags">
+              <span>React.js</span>
+              <span>Flutter (Dart)</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Tailwind CSS</span>
+              <span>Git</span>
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
 
-              <div class="progress">
-                <h3>Graphic Design <span>40%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-
-              <div class="progress">
-                <h3>Digital Marketing <span>40%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
+        <div class="skills-column">
+          <h3 class="title">Personal Skills</h3>
+          <div class="skills-box">
+            <div class="skills-content skill-tags">
+              <span>Problem Solving</span>
+              <span>Technical Troubleshooting</span>
+              <span>Communication Skills</span>
+              <span>Team Collaboration</span>
+              <span>Adaptability</span>
+              <span>Time Management</span>
+              <span>Customer-Focused Mindset</span>
+              <span>Android Studio</span>
+              <span>GitHub</span>
+              <span>Canva</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Certification section design -->
     <section class="certification" id="certification">
       <div>
-        <h2 class="heading">My <span>Certificates</span></h2>
-        <div>
-          <div class="certification-box">
-            <div class="certification-content">
-              <div class="content">
-                <h3>JavaScript Essential Training</h3>
-                <p>Issued by: LinkedIn Learning</p>
-                <p>Issued Date: January 2023</p>
-                <a href="https://rb.gy/gxyx2z" target="_blank">
-                  <img
-                    src="./images/Certificate00.png"
-                    alt="JavaScript Essential Training Certificate"
-                    class="certificate-img"
-                  />
-                </a>
-              </div>
+        <h2 class="heading">Certificates & <span>Achievements</span></h2>
+        <div class="certification-box">
+          <div class="certification-content">
+            <div class="content">
+              <h3>Virtual Tech Carnival</h3>
+              <p>Varendra University</p>
+              <p>1st Runner-up, 2020</p>
+              <p>Hardware project showcase: Smart Bin</p>
             </div>
+          </div>
 
-            <div class="certification-content">
-              <div class="content">
-                <h3>
-                  CSS:
-                  <hr />
-                  Animation
-                </h3>
-                <p>Issued by: LinkedIn Learning</p>
-                <p>Issued Date: January 2023</p>
-                <a href="https://rb.gy/yxlk7y" target="_blank">
-                  <img
-                    src="./images/Certificate01.png"
-                    alt="CSS: Animation"
-                    class="certificate-img"
-                  />
-                </a>
-              </div>
+          <div class="certification-content">
+            <div class="content">
+              <h3>JavaScript Essential Training</h3>
+              <p>Issued by: LinkedIn Learning</p>
+              <p>Issued Date: January 2023</p>
+              <a href="https://rb.gy/gxyx2z" target="_blank">
+                <img
+                  src="./images/Certificate00.png"
+                  alt="JavaScript Essential Training Certificate"
+                  class="certificate-img"
+                />
+              </a>
             </div>
+          </div>
 
-            <div class="certification-content">
-              <div class="content">
-                <h3>Tailwind CSS 3 Essential Training</h3>
-                <p>Issued by: LinkedIn Learning</p>
-                <p>Issued Date: February 2023</p>
-                <a href="https://rb.gy/yb63ff" target="_blank">
-                  <img
-                    src="./images/Certificate02.png"
-                    alt="Tailwind CSS 3 Essential Training"
-                    class="certificate-img"
-                  />
-                </a>
-              </div>
+          <div class="certification-content">
+            <div class="content">
+              <h3>CSS: Animation</h3>
+              <p>Issued by: LinkedIn Learning</p>
+              <p>Issued Date: January 2023</p>
+              <a href="https://rb.gy/yxlk7y" target="_blank">
+                <img
+                  src="./images/Certificate01.png"
+                  alt="CSS: Animation Certificate"
+                  class="certificate-img"
+                />
+              </a>
             </div>
+          </div>
 
-            <div class="certification-content">
-              <div class="content">
-                <h3>Young Professional Smartification (YPS)</h3>
-                <p>Issued by: Smartifier Academy</p>
-                <p>Issued Date: July 2020</p>
-                <a href="" target="_blank">
-                  <img
-                    src="./images/Certificate03.jpg"
-                    alt="Young Professional Smartification"
-                    class="certificate-img"
-                  />
-                </a>
-              </div>
+          <div class="certification-content">
+            <div class="content">
+              <h3>Tailwind CSS 3 Essential Training</h3>
+              <p>Issued by: LinkedIn Learning</p>
+              <p>Issued Date: February 2023</p>
+              <a href="https://rb.gy/yb63ff" target="_blank">
+                <img
+                  src="./images/Certificate02.png"
+                  alt="Tailwind CSS 3 Essential Training Certificate"
+                  class="certificate-img"
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- contact section design -->
 
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
-      <form action="https://formspree.io/f/meoopwbp" method="POST">
+      <div class="contact-summary">
+        <p><i class="bx bx-map"></i> Vilnius, Lithuania</p>
+        <p><i class="bx bx-phone"></i> +370 654 62497</p>
+        <p><i class="bx bx-envelope"></i> obaidurnasim@gmail.com</p>
+      </div>
+      <form
+        action="https://formspree.io/f/meoopwbp"
+        method="POST"
+        id="contact-form"
+      >
         <div class="input-box">
           <div class="input-field">
             <input
@@ -410,12 +419,7 @@
 
         <div class="input-box">
           <div class="input-field">
-            <input
-              type="number"
-              name="mobile"
-              placeholder="Mobile Number"
-              required
-            />
+            <input type="tel" name="mobile" placeholder="Mobile Number" />
             <span class="focus"></span>
           </div>
           <div class="input-field">
@@ -446,15 +450,15 @@
       </form>
     </section>
 
-    <!-- footer design -->
-
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2025 by Nasim | All Rights Reserved</p>
+        <p>Copyright &copy; 2026 by Nasim | All Rights Reserved</p>
       </div>
 
       <div class="footer-iconTop">
-        <a href=""><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#home" aria-label="Back to top"
+          ><i class="bx bx-up-arrow-alt"></i
+        ></a>
       </div>
     </footer>
     <script src="js/script.js"></script>

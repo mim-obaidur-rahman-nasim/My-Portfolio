@@ -18,7 +18,7 @@
 }
 
 html {
-    font-size: 62.5;
+    font-size: 62.5%;
     overflow-x: hidden;
 }
 
@@ -59,7 +59,7 @@ body{
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
-    font-weight: 5 00;
+    font-weight: 500;
     margin-left: 3.5rem;
     transition: .3s;
 }
@@ -78,30 +78,32 @@ body{
 }
 
 section {
-    min-height: 100hv;
+    min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
 
 .home {
     display: flex;
     align-items: center;
-    padding:20% 9%;
+    gap: 4rem;
+    min-height: 100vh;
+    padding: 14rem 9% 8rem;
     background: url('/images/home.png') no-repeat;
     background-size: cover;
     background-position: left center;
 }
 
 .home-content {
-    max-width: 60rem;
+    width: min(100%, 78rem);
     z-index: 99;
 }
 
 .home-content h1 {
     position: relative;
     display: inline-block;
-    font-size: 5.6rem;
+    font-size: clamp(3.8rem, 5vw, 7rem);
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.15;
 }
 
 .home-content h1 span {
@@ -110,52 +112,49 @@ section {
 
 .home-content .text-animate {
     position: relative;
-    width: 35.5rem;
+    width: min(100%, 62rem);
 }
 
 .home-content .text-animate h3 {
-    font-size: 3.2rem;
+    font-size: clamp(2.6rem, 3.4vw, 4.2rem);
     font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);
-    background-image: linear-gradient(var(--main-color), var(--main-color)) ;
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-position: -33rem 0;
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
-    white-space: nowrap;
+    color: var(--main-color);
+    -webkit-text-stroke: 0;
+    background-image: none;
+    animation: none;
+    white-space: normal;
 }
 
 .home-content .text-animate h3::before {
-    content: ''; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-right: 2px solid var(--main-color);
-    z-index: -1;
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
+    display: none;
 }
 
 .home-content p {
     position: relative;
-    font-size: 1.6rem;
-    margin: 2rem 0 4rem;
+    max-width: 74rem;
+    font-size: clamp(1.6rem, 1.8vw, 2.3rem);
+    line-height: 1.55;
+    margin: 2rem 0 2.4rem;
 }
 
 .ani-gif{
     padding-left: 20px;
 }
 
+
+.ani-gif img {
+    max-width: min(30rem, 24vw);
+    height: auto;
+}
+
+
 .btn-box {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    width: 34.5rem;
-    height: 5rem;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    width: min(100%, 46rem);
+    min-height: 5rem;
 }
 
 .btn-box .btn {
@@ -164,7 +163,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 15rem;
-    height: 100%;
+    height: 5rem;
     background: var(--main-color);
     border: .2rem solid var(--main-color);
     border-radius: .8rem;
@@ -211,11 +210,11 @@ section {
 }
 
 .home-sci {
-    position: absolute;
-    bottom: -4rem;
+    position: relative;
     width: 170px;
     display: flex;
     justify-content: space-between;
+    margin: 1.2rem 0 3rem;
 }
 
 .home-sci a {
@@ -794,23 +793,129 @@ span {
   }
   
 
+
+
+.location-line {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 1rem !important;
+}
+
+.home-content .text-animate {
+    width: 44rem;
+    max-width: 100%;
+}
+
+.home-sci {
+    margin-top: 1rem;
+}
+
+.projects {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: 2.4rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 0;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.project-card:hover::before {
+    width: 100%;
+}
+
+.project-card i {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    font-size: 1.55rem;
+    line-height: 1.7;
+}
+
+.skill-list-row .skills-column {
+    flex: 1 1 30rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.skill-tags span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 3.8rem;
+    padding: .8rem 1.2rem;
+    border: .1rem solid rgba(0, 171, 240, .45);
+    border-radius: .6rem;
+    color: var(--text-color);
+    background: rgba(0, 171, 240, .08);
+    font-size: 1.45rem;
+    line-height: 1.3;
+}
+
+.contact-summary {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem 2.4rem;
+    margin: -1rem auto 2rem;
+    font-size: 1.6rem;
+}
+
+.contact-summary p {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.contact-summary i {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+
 /* breakpoints */
 @media (max-width: 2400px) {
     html {
         font-size: 60%;
     }
-
-    .home{
-    display: flex;
-    gap: 20px;
-    }
 }
 
 @media (max-width: 991px) {
-    .home{
-        display: flex;
-        gap: 20px;
-        }
     .header {
         padding: 2rem 4%;
     }
@@ -820,7 +925,11 @@ span {
     }
 
     .home {
-        padding: 30 4%;
+        padding: 11rem 4% 6rem;
+    }
+
+    .ani-gif {
+        display: none;
     }
 
     .footer {
@@ -829,11 +938,38 @@ span {
 }
 
 @media (max-width: 768px) {
-    .home{
-        justify-content: center;
+    .home {
+        width: 100%;
+        max-width: 100vw;
+        justify-content: stretch;
         display: grid;
-        gap: 40px;
-        }
+        grid-template-columns: minmax(0, 1fr);
+        gap: 3rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;
+        overflow-x: hidden;
+    }
+
+    .home-content {
+        width: calc(100vw - 40px);
+        max-width: calc(100vw - 40px);
+        min-width: 0;
+    }
+
+    .home-content h1,
+    .home-content p,
+    .home-content .text-animate {
+        width: calc(100vw - 40px);
+        max-width: calc(100vw - 40px);
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .home-content h1 {
+        display: block;
+    }
+
     .header {
         background: var(--bg-color);
     }
@@ -897,6 +1033,14 @@ span {
         background: var(--bg-color);
         opacity: .6;
     }
+
+    .home-content .text-animate h3 {
+        white-space: normal;
+    }
+
+    .home-sci {
+        margin: 1rem 0 2.4rem;
+    }
     
 }
 
@@ -905,13 +1049,30 @@ span {
         font-size: 50%;
     }
 
-    .ani-gif{
-        display: none;
-    }
-
     .home-content {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-content .text-animate h3 {
+        white-space: normal;
+    }
+
+    .home-sci {
+        margin-bottom: 2.4rem;
+    }
+
+    .btn-box {
+        flex-direction: column;
+        align-items: stretch;
+        width: min(100%, 34rem);
+        height: auto;
+    }
+
+    .btn-box .btn {
+        width: 100%;
+        height: 5.4rem;
     }
 
     .home-sci {
@@ -926,8 +1087,12 @@ span {
 
 @media (max-width: 462px) {
     .home-content h1 {
-        font-size: 5.2rem;
-        margin-top: 30px;
+        font-size: 3.5rem;
+        margin-top: 20px;
+    }
+
+    .home-content p {
+        font-size: 1.7rem;
     }
 
     .education {
@@ -948,6 +1113,16 @@ span {
     }
 }
 
+@media (max-width: 390px) {
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content .text-animate h3 {
+        font-size: 2.3rem;
+    }
+}
+
 @media (max-width: 371px) {
     .home {
         justify-content: center;
@@ -955,9 +1130,9 @@ span {
 
     .home-content {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
     
 }
