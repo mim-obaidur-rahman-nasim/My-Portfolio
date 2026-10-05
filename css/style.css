@@ -301,6 +301,9 @@ span {
 
 .about-img img {
     width: 90%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center 30%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
 }
